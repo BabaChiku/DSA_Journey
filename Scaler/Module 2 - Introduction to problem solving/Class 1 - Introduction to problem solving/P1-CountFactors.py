@@ -25,7 +25,7 @@ Return the count of factors of A.
 class Solution:
     # @param A : integer
     # @return an integer
-    def solve_with_for(self, A):
+    def solveWithFor(self, A):
         count = 0
         # Loop from 1 to the square root of A (inclusive)
         for i in range(1, int(A**0.5)+1):
@@ -37,7 +37,7 @@ class Solution:
                     count += 1
         return count
     
-    def solve_with_while(self, A):
+    def solveWithWhile(self, A):
         count = 2  # Start with 2 to account for 1 and A itself
         i = 2
         # Loop while i squared is less than or equal to A
