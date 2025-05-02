@@ -9,7 +9,7 @@ Example : 1, 2, 3, 6 are factors of 6
 
 # Problem Constraints
 '''
-1 <= A <= 109
+1 <= A <= 10^9
 '''
 
 # Input Format

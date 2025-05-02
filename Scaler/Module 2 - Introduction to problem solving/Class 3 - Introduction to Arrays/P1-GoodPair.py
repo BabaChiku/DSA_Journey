@@ -5,9 +5,9 @@ Given an array A and an integer B. A pair(i, j) in the array is a good pair if i
 
 # Problem Constraints
 '''
-1 <= A.size() <= 104
-1 <= A[i] <= 109
-1 <= B <= 109
+1 <= A.size() <= 10^4
+1 <= A[i] <= 10^9
+1 <= B <= 10^9
 '''
 
 # Input Format

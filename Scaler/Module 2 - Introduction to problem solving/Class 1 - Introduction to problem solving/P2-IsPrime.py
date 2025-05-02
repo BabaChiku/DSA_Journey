@@ -8,7 +8,7 @@ The value of A can cross the range of Integer.
 
 # Problem Constraints
 '''
-1 <= A <= 109
+1 <= A <= 10^9
 '''
 
 # Input Format

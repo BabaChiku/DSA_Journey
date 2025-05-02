@@ -10,7 +10,7 @@ A proper divisor of a natural number is the divisor that is strictly less than t
 
 # Problem Constraints
 '''
-1 <= A <= 106
+1 <= A <= 10^6
 '''
 
 # Input Format
