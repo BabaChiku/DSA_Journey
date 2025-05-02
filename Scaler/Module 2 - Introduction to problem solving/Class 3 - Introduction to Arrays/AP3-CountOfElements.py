@@ -200,5 +200,5 @@ if __name__ == "__main__":
         except Exception as e:
             print("Invalid input, please provide a valid array of integers.")
             print("Error:", e)
-            print("Usage: python script.py [1,2,3,4,5]")
+            print("Usage: python AP3-CountOfElements.py [1,2,3,4,5]")
             print("Where [1,2,3,4,5] is the input array")
