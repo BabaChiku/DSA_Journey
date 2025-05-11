@@ -93,6 +93,5 @@ if __name__ == "__main__":
         except Exception as e:
             print("Invalid input. Please provide a list of integers separated by commas.")
             print("Error:", e)
-            print("Usage: python script.py [1,2,3]")
+            print("Usage: python AP1-EquilibriumIndex.py [1,2,3]")
             print("Where [1,2,3] is the input array.")
-            print("Example: python AP1-EquilibriumIndex.py [-7,1,5,2,-4,3,0]")
