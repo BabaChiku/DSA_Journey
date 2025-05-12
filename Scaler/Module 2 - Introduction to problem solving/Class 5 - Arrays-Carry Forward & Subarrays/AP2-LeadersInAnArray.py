@@ -43,3 +43,44 @@ class Solution:
         
         # Return the list of leaders
         return leaders
+
+# Time Complexity
+'''
+The time complexity of this solution is O(N), where N is the length of the array A.
+This is because we are iterating through the array A once to find the leaders, and the reverse operation is O(N) as well.
+'''
+
+# Space Complexity
+'''
+The space complexity of this solution is O(N), where N is the number of leaders found.
+'''
+
+# Solution
+'''
+This solution uses a single loop to find the leaders in the array A by keeping track of the maximum value seen so far from the right side of the array.
+'''
+
+
+import sys
+
+if __name__ == "__main__":
+    s = Solution()
+    if len(sys.argv) == 1:
+        # Test case 1
+        A = [1, 1, 3]
+        print("Test case 1: Finding leaders in A=[1, 1, 3]")
+        print("Leaders:", s.solve(A))
+        # Test case 2
+        A = [2, 1, 2]
+        print("Test case 2: Finding leaders in A=[2, 1, 2]")
+        print("Leaders:", s.solve(A))
+    else:
+        try:
+            A = list(map(int, sys.argv[1].strip("[]").split(",")))
+            print("Finding leaders in A =", A)
+            print("Leaders:", s.solve(A))
+        except Exception as e:
+            print("Invalid input. Please provide a list of integers separated by commas.")
+            print("Error:", e)
+            print("Usage: python AP2-LeadersInAnArray.py [1,2,3]")
+            print("Where [1,2,3] is the input array.")
