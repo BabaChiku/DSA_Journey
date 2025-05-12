@@ -82,7 +82,7 @@ if __name__ == "__main__":
             print("Finding subsequences AG in A='{}'".format(A))
             print("Number of subsequences AG:", s.solve(A))
         except Exception as e:
-            print("Invalid input. Please provide a list of integers separated by commas.")
+            print("Invalid input. Please provide a string.")
             print("Error:", e)
             print("Usage: python P4-SpecialSubsequences.py ABCGAG")
             print("Where 'ABCGAG' is the input string.")
