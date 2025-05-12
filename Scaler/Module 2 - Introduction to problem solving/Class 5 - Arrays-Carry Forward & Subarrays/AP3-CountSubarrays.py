@@ -83,7 +83,7 @@ if __name__ == "__main__":
     else:
         try:
             # Read the input array from command line arguments
-            A = list(map(int, sys.argv[1:]))
+            A = list(map(int, sys.argv[1].strip("[]").split(",")))
             print("Input array:", A)
             print("Number of unique subarrays:", s.solve(A))
         except Exception as e:
