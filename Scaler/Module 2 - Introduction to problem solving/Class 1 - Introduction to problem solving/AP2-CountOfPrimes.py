@@ -20,6 +20,18 @@ Return the count of prime numbers less than or equal to n.
 
 
 class Solution:
+
+    def isPrime(self, A):
+        # Check if A is less than 2
+        if A < 2:
+            return 0
+        # Loop from 2 to the square root of A (inclusive)
+        for i in range(2, int(A**0.5)+1):
+            # Check if i is a factor of A
+            if A % i == 0:
+                return 0
+        return 1
+    
     # @param A : integer
     # @return an integer
     def countPrime(self, A):
@@ -35,16 +47,6 @@ class Solution:
                 count += 1
         return count
     
-    def isPrime(self, A):
-        # Check if A is less than 2
-        if A < 2:
-            return 0
-        # Loop from 2 to the square root of A (inclusive)
-        for i in range(2, int(A**0.5)+1):
-            # Check if i is a factor of A
-            if A % i == 0:
-                return 0
-        return 1
     
     def countPrimeOptimized(self, A):
         # Check if A is less than 2
