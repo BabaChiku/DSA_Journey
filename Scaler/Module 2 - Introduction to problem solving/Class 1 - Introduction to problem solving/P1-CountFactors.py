@@ -38,8 +38,8 @@ class Solution:
         return count
     
     def solveWithWhile(self, A):
-        count = 2  # Start with 2 to account for 1 and A itself
-        i = 2
+        count = 0
+        i = 1
         # Loop while i squared is less than or equal to A
         while (i * i) <= A:
             # Check if i squared is equal to A
