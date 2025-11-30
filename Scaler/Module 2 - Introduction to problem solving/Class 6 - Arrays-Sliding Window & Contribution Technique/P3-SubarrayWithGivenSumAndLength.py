@@ -69,3 +69,35 @@ This solution uses the sliding window technique to efficiently find a subarray o
 It first calculates the sum of the initial window of size B and then iteratively updates the sum by sliding the window one element at a time. 
 If at any point the sum of the current window equals C, the function returns 1. If no such subarray is found by the end of the array, it returns 0.
 '''
+
+
+import sys
+
+if __name__ == "__main__":
+    s = Solution()
+    if len(sys.argv) == 1:
+        # Test case 1
+        A = [4, 3, 2, 6, 1]
+        B = 3
+        C = 11
+        print("Finding subarray of length", B, "with sum", C, "in A =", A)
+        print("Result:", s.solve(A, B, C))
+        # Test case 2
+        A = [4, 2, 2, 5, 1]
+        B = 4
+        C = 6
+        print("Finding subarray of length", B, "with sum", C, "in A =", A)
+        print("Result:", s.solve(A, B, C))
+    else:
+        try:
+            # Custom input
+            A = list(map(int, sys.argv[1].split(',')))
+            B = int(sys.argv[2])
+            C = int(sys.argv[3])
+            print("Finding subarray of length", B, "with sum", C, "in A =", A)
+            print("Result:", s.solve(A, B, C))
+        except Exception as e:
+            print("Invalid input. Please provide the array A, integer B, and integer C as input.")
+            print("Error:", e)
+            print("Usage: python P3-SubarrayWithGivenSumAndLength.py 4,3,2,6,1 3 11")
+            print("Where 4,3,2,6,1 is the input array A, 3 is B, and 11 is C.")
